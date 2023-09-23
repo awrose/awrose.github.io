@@ -22,4 +22,11 @@ document.getElementById('submitButton').addEventListener('click', function(event
         console.error("Failed to send the email", err);
     })
 
+    let contactForm = document.getElementById("contactForm");
+    contactForm.reset();
+
+    let sentEmail = document.getElementById("success");
+    sentEmail.textContent = "Email successfully sent to awrose@udel.edu";
+    sentEmail.style.color = "green";
+
 });
