@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <title>Abbey's Personal Website</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,700|Montserrat:700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/182175ac63.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 </head>
 <body>
     <div>
-        <div class="navbar">
+        <nav id="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -20,78 +21,320 @@
                 <li class="dropdown">
                     <a href="#classLinks">Class Links</a>
                     <ul class="dropRight">
-                        <li><a href="https://apeluso03.github.io/">⬅️ Alex Peluso</a></li>
+                        <li><a href="https://apeluso03.github.io/">Previous Student (Alex Peluso)</a></li>
                         <li><a href="https://mattm401.github.io/">CISC474 Page on Github</a></li>
-                        <li><a href="https://lewisev.github.io">Evan Lewis ➡️</a></li>
+                        <li><a href="https://lewisev.github.io">Next Student (Evan Lewis)</a></li>
                     </ul>
                 </li>
             </ul>
-        </div>
+        </nav>
 
-        <section id="home">
+        <section class="one-page-section" id="home">
             <div class="mainContent">
+                <!--Abigail Walters, CISC474, Personal Web Page 1, awrose@udel.edu-->
                 <div class="profile">
                     <img class="circular--portrait profile-pic" src="media/ghcHeadshot.jpeg" alt="Picture of Website Owner">
                     <div class="profile-text">
                         <h1>👋🏻 Hi, I'm Abigail Walters</h1>
-                        <p>Senior Computer Science major at the University of Delaware with a minor in Politics and Social Justice.
-                            Currently, I'm a Software Engineering Intern at JPMorgan Chase & Co.
-                            Post gradution, I'm eager to join a socially conscious company as a Program Manager or Software Engineer. 
-                        </p>
+                        <ul class="list-without-bullets">
+                            <li>CS Student at the University of Delaware.</li>
+                            <li>Software Engineer Intern at JPMorgan Chase & Co.</li>
+                            <li>Aspiring Software Engineer or Program Manager.</li>
+                            <li>Cat Lover.</li>
+                        </ul>
+                        
                     </div>
                 </div>
-                <!--Abigail Walters, CISC474, Personal Web Page 1, awrose@udel.edu-->
             </div>
         </section>
 
         <section id="about">
-            <div class="mainContent">
-                <div>
-                    <h1>About Me!</h1>
-                </div>
-            
-                <div>
-                    <h2>Short Introduction</h2>
-                    <p>
-                        Hi Everyone! My name is Abbey and I'm a Senior at UD studying Computer Science with a custom concentration in Software Engineering and a minor in politics and social justice! 
-                        I'm currently an intern with JPMorgan Chase and am a member of the CPUs!
-                        I am a firm believer that as technology continues to interweave with society, it is imperative that our creations are inclusive and conscious!
-                        I really love learning new things, so a lot of my hobbies revolve around learning! I'm currently learning how to crochet! I also enjoy baking and spending time outside!
-                    </p>
-                </div> 
-            
-                <div>
-                    <p>I adopted a kitten over the summer, his name is <b>Milo!</b></p>
-                    <img src="media/Milo.jpg" alt="Gray and White Kitten" width="250" height="300">
-                </div>
+            <div>
+                <h2>A little about me</h2>
+                <p>Hi there! I'm Abbey Walters and I'm a student at the University of Delaware studying Computer Science with a concentration in Software Engineering, 
+                    while also minoring in Politics + Social Justice. For me, tech goes beyond shiny gadgets; it's also about recognizing it's imprint on society. Every application
+                    changes the world in some way, I strive to ensure the applications that I create add positive value to society. 
+                </p>
             </div>
         
             <div>
-                <h2>My interests in Web Dev!</h2>
-                <ul>
-                    <li>Web dev allows for creative expression and impact!</li>
-                    <li>The web is universal, so web development allows for broad reach and accessibility to a vast audience!</li>
-                    <li>Web dev allows for ever-evolving technology and opportunities - there's always something to learn! </li>
-                    <li>Web dev allows for interdisciplinary collaboration!</li>
-                    <li>Web dev involves problem solving skills!</li>
-                </ul>
+                <h2>My Journey in CS</h2>
+                <p>
+                    Growing up, the world of technology was a realm I hadn’t envisioned for myself. It was during my senior year in high school, at the gentle prodding of my father, that I decided to enroll in my first computer science class. Much to my surprise, I found myself enamored with the intricate art of programming and the joy of solving complex problems. By the time college applications rolled around, I was firmly set on joining a computer science program.
+
+                    My budding passion took a definitive turn when I participated in JPMorgan Chase's Generation Tech Youth Hackathon. This experience cemented my aspirations to become a software engineer. As of today, I have had the opportunity to intern with JPMC 3 times (2 of which being on the team that runs Generation Tech - what are the odds?) and I have gained many invaluable skills from working at such a large and respected company. 
+                    
+                    Before my foray into technology, my sights were set on a career in politics. However, as I delved deeper into my research, I realized that technology and politics weren't mutually exclusive. Today, my mission is to design inclusive applications that resonate with a diverse audience and to contribute actively to the broader community. I am driven by the merger of my passion for social justice and technology, and I eagerly await the many milestones that lie ahead in my journey.
+                </p>
             </div>
         
-            <div>
-                <h2>Interesting Fact</h2>
-                <p>I studied abroad this past winter session in Hawaii and went skydiving!</p>
+            <div class="hobbies">
+                <h2>Hobbies & Interests</h2>
+                <div class="reduced-margin">
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-brands fa-leanpub"></i><h5>Continuous Learning</h5>
+                        </div>
+                        <p>I'm passionate about acquiring both technological and non-technological knowledge. There's always a new hobby on my horizon!</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-solid fa-cookie-bite"></i><h5>Baking</h5>
+                        </div>
+                        <p>For me, baking is therapeutic. I pride myself on my classic chocolate chip cookies.</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-solid fa-cat"></i><h5>Pet Parenting</h5>
+                        </div>
+                        <p>My kitten is the newest addition to my family. Nurturing him and witnessing his growth brings immense joy to my daily life.</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-solid fa-group-arrows-rotate"></i><h5>Community Service</h5>
+                        </div>
+                        <p>Community is paramount to me. I consistently seek opportunities to volunteer and positively impact those around me.</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-solid fa-plane"></i><h5>Travel</h5>
+                        </div>
+                        <p>Exploration drives me. From local retreats to international journeys, like my recent study abroad trip to Hawai'i.</p>
+                    </div>
+                </div>
             </div>
+            
+        
+            <div class="values">
+                <h2>Values & Motivations</h2>
+                <div class="reduced-margin">
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-regular fa-heart"></i><h5>Passion</h5>
+                        </div>
+                        <p>I believe in wholeheartedly having a deep love for the work that you choose to do.</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-solid fa-people-group"></i><h5>Respect</h5>
+                        </div>
+                        <p>I uphold the principle of treating everyone with fairness, understanding, and recognizing their innate dignity.</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-solid fa-people-arrows"></i><h5>Empathy</h5>
+                        </div>
+                        <p>I strive to understand and resonate with the emotions and circumstances of others.</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-brands fa-connectdevelop"></i><h5>Diversity & Inclusion</h5>
+                        </div>
+                        <p>I advocate for an inclusive environment, valuing differing perspectives, and ensuring every voice is acknowledged and celebrated.</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-solid fa-earth-americas"></i><h5>Positive Impact</h5>
+                        </div>
+                        <p>My mission is to enact change that brings about tangible benefits for communities and individuals alike.</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-solid fa-person-burst"></i><h5>Empowerment</h5>
+                        </div>
+                        <p>I'm committed to uplifting others, enabling them to reach their utmost potential.</p>
+                    </div>
+                    <div class="values-horizontal-container">
+                        <div class="values-header-container">
+                            <i class="fa-solid fa-handshake-angle"></i><h5>Service</h5>
+                        </div>
+                        <p>I believe in contributing through time, expertise, and resources to causes I hold dear.</p>
+                    </div>
+                </div>
+            </div>
+            
+        
         </section>
+        
 
         <section id="resume">
+            <h2>My Journey & Qualifications</h2>
+            <div class="main-content-container">
+                <div class="skill-highlight-container">
+                    <h2>Skills</h2>
+                    <div class="reduced-margin">
+                        <div class="skill-horizontal-container">
+                            <h5>Languages </h5><p>Java, C/C++, JavaScript/TypeScript, Python, HTML, CSS, Apex, SQL, SOQL</p>
+                        </div>
+                        <div class="skill-horizontal-container">
+                            <h5>Tools </h5><p>Git/GitHub, VSCode, IntelliJ IDEA, Figma, JIRA, Bitbucket, Agile/Scrum, Jenkins</p>
+                        </div>
+                        <div class="skill-horizontal-container">
+                            <h5>Frameworks </h5><p>React, Node.js, Salesforce Lightning Web Components, JUnit, Phaser, Spring Boot</p>
+                        </div>
+                        <div class="skill-horizontal-container">
+                            <h5>Certifications </h5><p><a href="https://www.credly.com/badges/ebc13c25-c602-4717-ba8c-667209b80b20/public_url" target="_blank">AWS Cloud Practitioner</a></p>
+                        </div>
+                    </div>
 
-        </section>
-
-        <section id="projects">
+                    <button class="button" onclick="location.href='media/Abigail_Walters__Resume.pdf';">View my Resume Here</button>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="header-container">
+                        <i class="fa-solid fa-briefcase"></i><h3>Experience</h3>
+                        </div>
+                        <div>
+                            <h4><b>JPMorgan Chase & Co | Software Engineer Intern</b></h4>
+                            <p>Collaborated using <b>Agile & JIRA</b>.</p>
+    
+                        <div class="reduced-margin">
+                            <div class="horizontal-container">
+                                <h5>Since Sep '23: </h5><p>Automated grant making process using <b>Salesforce</b>.</p>
+                            </div>
+                            <div class="horizontal-container">
+                                <h5>Summer '23: </h5><p>Refactored monolithic apps using <b>Java Spring & React</b>.</p>
+                            </div>
+                            <div class="horizontal-container">
+                                <h5>Summer '22: </h5><p>Created apps using <b>Apex, HTML, JS & React</b>.</p>
+                            </div>
+                        </div>
+                            
+                        </div>
+                    </div>
             
+                    <div class="card">
+                        <div class="header-container">
+                            <i class="fa-solid fa-school"></i><h3>Education</h3>
+                        </div>
+                        <h4>University of Delaware, College of Engineering</h4>
+                        <p class="reduced-margin">Computer Science Major</p>
+                        <p class="reduced-margin">Politics + Social Justice Minor</p>
+                        <h5>Honors & Awards:</h5>
+                        <ul>
+                            <li>College of Engineering, CISC Honorable Mention Award ’23</li>
+                        </ul>
+                    </div>
+            
+                    <div class="card">
+                        <div class="header-container">
+                            <i class="fa-solid fa-handshake-angle"></i><h3>Involvement</h3>
+                        </div>
+                        <div class="reduced-margin">
+                            <div class="horizontal-container">
+                                <h5>CPUs: </h5><p>Promote community & DEI within UD CISC department.</p>
+                            </div>
+                            <div class="horizontal-container">
+                                <h5>HenHacks Hackathon: </h5><p>Organized Delaware's largest college-run hackathon with 200+ participants; led & managed 30+ volunteers.</p>
+                            </div>
+                            <div class="horizontal-container">
+                                <h5>Youth Outreach: </h5><p>Taught elmentary CS topics to local 2nd and 3rd graders.</p>
+                            </div>
+                            <div class="horizontal-container">
+                                <h5>CISC Study Abroad: </h5><p>Taught elementary CS to Hawai'i elementary students.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="header-container">
+                            <i class="fa-solid fa-people-roof"></i><h3>Leadership</h3>
+                        </div>
+    
+                        <div class="reduced-margin">
+                            <div class="horizontal-container">
+                                <h5>HenHacks Admin: </h5><p>Oversee 4 committees working to organize the hackathon.</p>
+                            </div>
+                            <div class="horizontal-container">
+                                <h5>Capstone Team Manager: </h5><p>Direct team discussions and ensure project timelines, client coordiinator for project requirements and feedback.</p>
+                            </div>
+                            <div class="horizontal-container">
+                                <h5>JPMorgan Chase & Co: </h5><p>Acted as agility lead, leading daily standup discussions.</p>
+                            </div>
+                            <div class="horizontal-container">
+                                <h5>UD IT Shift Lead: </h5><p>Ensure quality troubleshooting and customer service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        
+
+        <section id="projects" class="two-page-section">
+            <h2>My Creations</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="media/Tournament Creator Website .png" alt="Tournament Builder Website Home Screen">
+                    <h3><a href="https://cisc472-tournament-app.web.app/" target="_blank">Tournament Builder Website</a></h3>
+                    <h5>Created in: October 2023</h5>
+                    <p>
+                        A comprehensive tournament creation platform that integrates <b>Firebase Hosting, Firestore, and Authentication</b> 
+                        with frontend technologies like <b>HTML, CSS, and JavaScript.</b> 
+                        Features include user authentication, tournament creation and management, automatic bracket generation, and winner determination. 
+                        <a href="https://github.com/awrose/CISC472-Tournament-App" target="_blank">[Source Code]</a>
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="media/Scholar Match.png" alt="Scholar Match Home Screen">
+                    <h3>ScholarMatch</h3>
+                    <h5>Created in: March 2023</h5>
+                    <p>
+                        A social good platform developed with <b>React</b> to assist high school seniors in quickly identifying relevant scholarships. 
+                        The ultimate goal is to aggregate data from numerous scholarship portals and display only active scholarships to users. 
+                        Features include scholarship search, bookmarking, and direct application capabilities. 
+                        <a href="https://github.com/awrose/CISC467-ScholarMatch" target="_blank">[Source Code]</a>
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="media/TurboTurtlesHomeScreen.png" alt="Turbo Turtles Home Screen">
+                    <h3><a href="https://robertsammataro.github.io/turbo-turtles/" target="_blank">Turbo Turtles</a></h3>
+                    <h5>Created in: January 2023</h5>
+                    <p>
+                        An educational game crafted for elementary students in Hawai'i, introducing them to foundational Computer Science concepts. 
+                        Developed using <b>Phaser</b>, the game centers on imparting conditional logic skills through engaging gameplay. 
+                        <a href="https://github.com/robertsammataro/turbo-turtles" target="_blank">[Source Code]</a>
+                    </p>
+                </div>
+                <div class="project-card">
+                    <div style="display: flex; justify-content: center; align-items: center">
+                        <img class="got-to-go" src="media/Got2Go.png" alt="Got2Go Home Screen">
+                    </div>
+                    <h3><a href="media/CISCx82 Got2Go Final - Full Demo.mov" target="_blank">Got2Go</a></h3>
+                    <h5>Created in: November 2022</h5>
+                    <p>
+                        An Android app catering to individuals with IBS, offering a reliable directory of restrooms. 
+                        Utilizing <b>Google Maps SDK and Firebase,</b> it allows users to find, review, and contribute bathroom data, fostering a community-driven platform. 
+                        <a href='https://github.com/awrose/CISCx82Got2Go' target="_blank">[Source Code]</a>
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="media/CISC275 Course Scheduler .png" alt="Course Scheduler Home Screen">
+                    <h3><a href="https://ud-cisc275-s22.github.io/cis-scheduler-team-18/" target="_blank">Course Scheduler</a></h3>
+                    <h5>Created in: April 2022</h5>
+                    <p>
+                        A tool designed for UD CISC students to streamline their course planning process. 
+                        Developed in <b>React and TypeScript</b>, it enables the creation, editing, and management of multi-semester academic plans, 
+                        while also providing a graduation requirement checker. 
+                        <a href="https://github.com/UD-CISC275-S22/cis-scheduler-team-18" target="_blank">[Source Code]</a>
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="media/Shell.png" alt="Shell Replica Home Screen">
+                    <h3>UNIX Shell Replica</h3>
+                    <h5>Created in: October 2022</h5>
+                    <p>
+                        A detailed replica of the UNIX shell, engineered in <b>C</b>. 
+                        It emulates a range of standard UNIX shell commands, providing a functional and educational tool to understand core shell operations. 
+                        <a href="https://github.com/awrose/CISC361-Shell" target="_blank">[Source Code]</a>
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
+        <section class="one-page-section" id="contact">
             <div class="contactContent">
                 <div class="contactText">
                     <h2>Contact Me!</h2>
@@ -151,6 +394,7 @@
         
     </div>
 
+    <script src="javascript/scroll.js"></script>
     <script src="javascript/emailValidification.js"></script>
 </body>
 </html>
