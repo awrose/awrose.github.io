@@ -7,11 +7,9 @@
     <title>Abbey's Personal Website</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://kit.fontawesome.com/182175ac63.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MBQJNTSDH"></script>
@@ -46,7 +44,7 @@
             <div class="mainContent">
                 <!--Abigail Walters, CISC474, Personal Web Page 1, awrose@udel.edu-->
                 <div class="profile">
-                    <img class="circular--portrait profile-pic" src="media/ghcHeadshot.jpeg" alt="Picture of Website Owner">
+                    <img class="profile-pic" src="media/ghcHeadshot.jpeg" alt="Picture of Website Owner">
                     <div class="profile-text">
                         <h1>👋🏻 Hi, I'm Abigail Walters</h1>
                         <ul class="list-without-bullets">
@@ -74,9 +72,7 @@
                 <h2>My Journey in CS</h2>
                 <p>
                     Growing up, the world of technology was a realm I hadn’t envisioned for myself. It was during my senior year in high school, at the gentle prodding of my father, that I decided to enroll in my first computer science class. Much to my surprise, I found myself captivated with the intricate art of programming and the joy of solving complex problems. By the time college applications rolled around, I was firmly set on joining a computer science program.
-
                     My fresh passion took a definitive turn when I participated in JPMorgan Chase's Generation Tech Youth Hackathon. This experience cemented my aspirations to become a software engineer. As of today, I have had the opportunity to intern with JPMC 3 times (2 of which being on the team that runs Generation Tech - what are the odds?) and I have gained many invaluable skills from working at such a large company. 
-                    
                     Before my journey into technology, my sights were set on a career in politics. However, as I delved deeper into my research, I realized that technology and politics weren't mutually exclusive. Today, my mission is to design inclusive applications that resonate with a diverse audience and to contribute actively to the broader community. I am driven by the merger of my passion for social justice and technology, and I eagerly await the many milestones that lie ahead in my journey.
                 </p>
             </div>
@@ -165,15 +161,13 @@
                     </div>
                 </div>
             </div>
-            
-        
         </section>
         
-
         <section id="resume">
             <h2>My Journey & Qualifications</h2>
             <button class="resume-button" onclick="window.open('media/Abigail_Walters_Resume.pdf', '_blank')">View my Resume Here</button>
             <div class="main-content-container">
+
                 <div class="skill-highlight-container">
                     <h2>Skills</h2>
                     <div class="reduced-margin">
@@ -190,8 +184,8 @@
                             <h5>Certifications </h5><p><a href="https://www.credly.com/badges/ebc13c25-c602-4717-ba8c-667209b80b20/public_url" target="_blank">AWS Cloud Practitioner</a></p>
                         </div>
                     </div>
-
                 </div>
+
                 <div class="card-container">
                     <div class="card">
                         <div class="header-container">
@@ -200,7 +194,6 @@
                         <div>
                             <h4><b>JPMorgan Chase & Co | Software Engineer Intern</b></h4>
                             <p>Collaborated using <b>Agile & JIRA</b>.</p>
-    
                         <div class="reduced-margin">
                             <div class="horizontal-container">
                                 <h5>Since Sep '23: </h5><p>Automated grant making process using <b>Salesforce</b>.</p>
@@ -212,10 +205,9 @@
                                 <h5>Summer '22: </h5><p>Created apps using <b>Apex, HTML, JS & React</b>.</p>
                             </div>
                         </div>
-                            
                         </div>
                     </div>
-            
+
                     <div class="card">
                         <div class="header-container">
                             <i class="fa-solid fa-school"></i><h3>Education</h3>
@@ -228,7 +220,7 @@
                             <li>College of Engineering, CISC Honorable Mention Award ’23</li>
                         </ul>
                     </div>
-            
+
                     <div class="card">
                         <div class="header-container">
                             <i class="fa-solid fa-handshake-angle"></i><h3>Involvement</h3>
@@ -312,8 +304,8 @@
                     </p>
                 </div>
                 <div class="project-card">
-                    <div style="display: flex; justify-content: center; align-items: center">
-                        <img class="got-to-go" src="media/Got2Go.png" alt="Got2Go Home Screen">
+                    <div class="got-to-go">
+                        <img src="media/Got2Go.png" alt="Got2Go Home Screen">
                     </div>
                     <h3>Got2Go</h3>
                     <h5>Created in: November 2022</h5>
@@ -380,7 +372,7 @@
                         <textarea id="message" name="user_email" placeholder="Your message :)" required></textarea>
                         <span id="messageValidation"></span>
                     </div>
-                    <button class="button" type="submit" id="submitButton">Submit</button>
+                    <button type="submit" id="submitButton">Submit</button>
                     <span id="emailStatus"></span>
                 </form>
             </div>
@@ -398,7 +390,7 @@
                 <a href="mailto:awrose@udel.edu">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://github.com/awrose">
+                <a href="https://github.com/awrose" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
