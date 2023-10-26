@@ -1,0 +1,84 @@
+#about {
+    padding: 50px;
+  }
+  
+  .hobbiesAndValues{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .list-without-bullets{
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  
+  .values-horizontal-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    border: 1px solid transparent; 
+    padding: 3px 0;
+  }
+  
+  .values-horizontal-container h5,
+  .values-horizontal-container p {
+      margin: 0;
+  }
+
+  .values-horizontal-container h5 {
+    flex: 0 0 180px;
+    margin-right: 10px; 
+  }
+  
+  .values-horizontal-container p {
+    flex: 1;
+  }
+  
+  .values-header-container{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-right: 16px;
+  }
+  
+  .values-header-container i{
+    margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .values-horizontal-container{
+      display:block;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .values-horizontal-container h5 {
+      flex: 0 0;
+      margin-right: 0px; 
+    }
+  }
+
+@media only screen and (max-width: 320px) {
+  
+    .values-horizontal-container h5 {
+      flex: 0 0;
+      margin-right: 0px; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .values-horizontal-container h5 {
+      flex: 0 0;
+      margin-right: 0px; 
+    }
+  
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .values-horizontal-container h5 {
+      flex: 0 0;
+      margin-right: 0px; 
+    }
+}

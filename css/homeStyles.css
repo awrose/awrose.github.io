@@ -1,0 +1,56 @@
+.mainContent{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .mainContent h1{
+    text-align: center;
+  }
+
+  .profile {
+    display: flex; 
+    align-items: center;  
+    position: relative;
+  }
+  
+  .profile-pic {
+    border-radius: 50%; 
+    width: 300px; 
+    height: 300px; 
+    margin-right: 20px;  
+    object-fit: cover; 
+    position: relative;
+    z-index: 1;
+  }
+  
+  .profile-text {
+    flex-grow: 1;  
+    max-width: 500px;
+  }
+
+  @media only screen and (max-width: 768px){
+    .profile {
+        display:block;
+      }
+  }
+
+  @media only screen and (max-width: 375){
+    .profile-pic{
+        width:250px;
+        height:250px;
+      }
+  }
+
+  @media only screen and (max-width: 320){
+    .profile-pic{
+        width:200px;
+        height:200px;
+      }
+
+      .profile-text{
+        font-size: 15px
+      }
+  }

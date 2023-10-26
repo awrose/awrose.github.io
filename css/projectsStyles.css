@@ -1,0 +1,115 @@
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 300px; 
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    flex: 0, 1 calc(50% - 10px);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .project-card h3 a {
+    text-decoration: none;
+    color: #333; 
+  }
+  
+  .project-card h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .project-card p {
+    color: #777; 
+    font-size: 1em;
+  }
+  
+  .got-to-go{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .got-to-go img{
+    max-height: 300px;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+  
+
+  .project-header-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    justify-content: start; 
+  }
+
+  .project-horizontal-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    border: 1px solid transparent; 
+    padding: 3px 0;
+  }
+  
+  .project-horizontal-container h5,
+  .project-horizontal-container p {
+      margin: 0; 
+  }
+  
+  .project-horizontal-container h5 {
+    flex: 0 0 107px; 
+    margin-right: 10px; 
+  }
+  
+  .project-horizontal-container p {
+    flex: 1; 
+  }
+
+  @media only screen and (max-width: 768px) {
+  
+    .project-horizontal-container {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .project-horizontal-container h5, .skill-horizontal-container h5 {
+      margin-bottom: 10px;
+    }
+
+    .project-card{
+        height:auto;
+        width: auto;
+        margin:10px;
+      }
+
+
+}

@@ -23,25 +23,6 @@ section{
   overflow-x: hidden;
   margin-bottom: 50px;
 }
- .mainContent{
-    text-align: center;
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    margin: 0;
-  }
-  .mainContent h1{
-    text-align: center;
-  }
-
-  .left {
-    text-align: left;
-  }
-
-  .right{
-    text-align: right;
-  }
-
 
   nav{
     position: fixed;
@@ -88,50 +69,6 @@ section{
     margin: 0;
   }
 
-
-  .contactForm{
-    width: 50%;
-
-  }
-
-  .contactForm form{
-    padding: 40px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .contactForm label{
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-
-  input[type=text]{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-
-  input[type=text].invalid, textarea.invalid{
-    border: 1px solid red;
-  }
-
-  textarea{
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    margin-bottom: 20px;
-  }
-
   button{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
@@ -149,33 +86,6 @@ section{
 
   button:hover{
     background-color: #5a6567;
-  }
-
-  span{
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 15px; 
-  }
-
-  .profile {
-    display: flex; 
-    align-items: center;  
-    position: relative;
-  }
-  
-  .profile-pic {
-    border-radius: 50%; 
-    width: 300px; 
-    height: 300px; 
-    margin-right: 20px;  
-    object-fit: cover; 
-    position: relative;
-    z-index: 1;
-  }
-  
-  .profile-text {
-    flex-grow: 1;  
-    max-width: 500px;
   }
 
   html{
@@ -241,39 +151,13 @@ footer {
   margin-right: 20px;
 }
 
-.contactContent{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10%;
-}
-
-.contactText h2{
-  font-size: 3em;
-}
-
 .social-icons{
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.resume-button{
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 900;
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  background-color: #1e292B;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.right-content{
+.right-footer-content{
   display: flex;
   justify-content:first baseline;
   margin-left: auto;
@@ -289,105 +173,10 @@ footer {
   color: #70908A;
 }
 
-.projects-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.project-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  width: 300px; 
-  padding: 10px 20px;
-  margin: 10px 0;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  background-color: #fff;
-  flex: 0, 1 calc(50% - 10px);
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-}
-
-.project-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-
-.project-card h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.project-card h3 a {
-  text-decoration: none;
-  color: #333; 
-}
-
-.project-card h3 a:hover {
-  text-decoration: underline;
-}
-
-.project-card p {
-  color: #777; 
-  font-size: 1em;
-}
-
-.got-to-go{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.got-to-go img{
-  max-height: 300px;
-}
-
 .active {
   font-weight: bold;
 }
 
-.main-content-container{
-  display: flex;
-  justify-content: space-between;
-}
-
-#resume {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
-}
-
-#projects {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 350px; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff; 
-  height: 350px;
-  padding: 25px;  
-  margin-bottom: 20px;  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
 
 .skill-highlight-container {
     border: 1px solid #ddd;
@@ -403,30 +192,6 @@ footer {
   
 }
 
-.card ul {
-  margin-top: 10px;  
-}
-.card h3 {
-  margin-bottom: 10px;
-}
-
-.card h4 {
-  margin-bottom: 15px;  
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.header-container{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-  justify-content: start; 
-}
-
 .fa-solid{
   font-size: 24px;
   color: #4F6C6B;
@@ -439,108 +204,6 @@ footer {
 }
 
 
-.horizontal-container {
-  display: flex;
-  align-items: center; 
-  gap: 10px; 
-  border: 1px solid transparent; 
-  padding: 3px 0;
-}
-
-.horizontal-container h5,
-.horizontal-container p {
-    margin: 0; 
-}
-
-.horizontal-container h5 {
-  flex: 0 0 107px; 
-  margin-right: 10px; 
-}
-
-.horizontal-container p {
-  flex: 1; 
-}
-
-
-.skill-highlight-container h2 {
-  border-bottom: 2px solid #4F6C6B; 
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.skill-horizontal-container {
-  padding: 10px 0;
-}
-
-.skill-horizontal-container h5 {
-  font-weight: 700; 
-  font-size: 16px;
-  margin-right: 15px; 
-  display: inline-block; 
-  width: 130px; 
-  vertical-align: top; 
-}
-
-.skill-horizontal-container p {
-  display: inline-block;
-  vertical-align: top; 
-  width: calc(100% - 145px); 
-}
-
-.skill-horizontal-container a {
-  color: #4F6C6B; 
-  text-decoration: underline; 
-}
-
-#about {
-  padding: 50px;
-}
-
-.hobbiesAndValues{
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-}
-
-.list-without-bullets{
-  list-style-type: none;
-  padding-left: 0;
-}
-
-
-.values-horizontal-container {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
-  border: 1px solid transparent; 
-  padding: 3px 0;
-}
-
-.values-horizontal-container h5,
-.values-horizontal-container p {
-    margin: 0;
-}
-
-.values-horizontal-container h5 {
-  flex: 0 0 180px;
-  margin-right: 10px; 
-}
-
-.values-horizontal-container p {
-  flex: 1;
-}
-
-.values-header-container{
-  display: flex;
-  align-items: center;
-  width: 200px;
-  margin-right: 16px;
-}
-
-.values-header-container i{
-  margin-right: 10px;
-}
-
 section:nth-child(odd) {
   background-color: #EDEDED;  /* existing color */
 }
@@ -551,103 +214,23 @@ section:nth-child(even) {
 
 
 @media only screen and (max-width: 768px) {
-  .profile {
-    display:block;
-  }
-  
   h2, h3, h4, h5 {
     text-align: center;
-  }
-
-  .resume-button {
-    display: block;
-    margin: 20px auto;
-  }
-
-  .horizontal-container {
-    align-items: center;
-    text-align: center;
-  }
-
-  .horizontal-container h5, .skill-horizontal-container h5 {
-    margin-bottom: 10px;
   }
 
   body{
     margin-left:95px;
   }
-  .contactForm {
-      width: 100%;
-  }
-
-  .card-container {
-    grid-template-columns: 1fr;
-    padding: 0px;
-    height:auto;
-  }
-
-  .card{
-    width: auto;
-    margin:10px;
-    height:auto;
-  }
-
-  .card p{
-    text-align: center;
-  }
-  
 
   section{
     max-height:600vh;
 
   }
 
-  .values-horizontal-container{
-    display:block;
-  }
-
-  .contactContent {
-      flex-direction: column;
-  }
-
-  .timeline-content {
-      width: 90%;
-  }
-
   nav{
     width: 90px;
   }
 
-  .main-content-container{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skill-highlight-container{
-    width:68%;
-    height: auto;
-    width: auto;
-    padding: 0px;
-    margin: 10px;
-  }
-
-  .skill-horizontal-container{
-    padding: 0px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
-
-  .project-card{
-    height:auto;
-    width: auto;
-    margin:10px;
-  }
-
-  .contactForm form{
-    width: auto;
-    
-  }
   footer{
     padding-left: 100px;
   }
@@ -662,91 +245,15 @@ section:nth-child(even) {
   h2, h3, h4, h5 {
     text-align: center;
   }
-  .profile-pic{
-    width:250px;
-    height:250px;
-  }
-
-  .values-horizontal-container h5 {
-    flex: 0 0;
-    margin-right: 0px; 
-  }
 }
 
 @media only screen and (max-width: 320px) {
   h2, h3, h4, h5 {
     text-align: center;
   }
-  .profile-pic{
-    width:200px;
-    height:200px;
-  }
-
-  .profile-text{
-    font-size: 15px
-  }
-
-  .values-horizontal-container h5 {
-    flex: 0 0;
-    margin-right: 0px; 
-  }
 
   section{
     max-height: 800vh;
   }
-
-  #resume{
-    margin:10px;
-  }
-  #resume h2{
-    font-size: 1.25rem;
-  }
-
-  .card{
-    margin: 20px;
-  }
-
-  #contact h2{
-    font-size: 1.25rem;
-  }
 }
 
-@media only screen and (max-width: 768px) {
-  .values-horizontal-container h5 {
-    flex: 0 0;
-    margin-right: 0px; 
-  }
-
-}
-
-@media only screen and (max-width: 1024px) {
-  .values-horizontal-container h5 {
-    flex: 0 0;
-    margin-right: 0px; 
-  }
-
-  .main-content-container{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skill-highlight-container{
-    width:68%;
-    height: auto;
-    width: auto;
-    padding: 0px;
-    margin: 40px;
-  }
-
-  .skill-highlight-container h2, .skill-highlight-container h5, .skill-highlight-container p{
-    text-align: center;
-  }
-
-  .skill-horizontal-container{
-    padding: 0px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
-
-}
