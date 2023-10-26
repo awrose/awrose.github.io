@@ -496,13 +496,7 @@ footer {
   padding: 50px;
 }
 
-.hobbies {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-}
-
-.values {
+.hobbiesAndValues{
   display: flex;
   gap: 20px;
   flex-direction: column;
