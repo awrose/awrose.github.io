@@ -99,12 +99,20 @@ function validateForm(){
         document.getElementById('message').classList.add('invalid');
     }
 
-    if(!phoneNumber && !phoneNumberPattern.test(phone)){
+    if(!phoneNumber){
         isValid = false;
         let phonePattern = document.getElementById("phoneValidation");
-        phonePattern.textContent = "Please enter a phone number in the form: 123-456-7890";
+        phonePattern.textContent = "Phone Number is required";
         phonePattern.style.color = "red";
         document.getElementById('phoneNumber').classList.add('invalid');
+    }else{
+        if(!phoneNumberPattern.test(phone)){
+            isValid = false;
+            let phonePattern = document.getElementById("phoneValidation");
+            phonePattern.textContent = "Please enter a phone number in the form: 123-456-7890";
+            phonePattern.style.color = "red";
+            document.getElementById('phoneNumber').classList.add('invalid');
+        }
     }
 
     return isValid;

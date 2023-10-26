@@ -163,6 +163,7 @@
 
         <section id="resume">
             <h2>My Journey & Qualifications</h2>
+            <button class="resume-button" onclick="window.open('media/Abigail_Walters_Resume.pdf', '_blank')">View my Resume Here</button>
             <div class="main-content-container">
                 <div class="skill-highlight-container">
                     <h2>Skills</h2>
@@ -181,7 +182,6 @@
                         </div>
                     </div>
 
-                    <button class="button" onclick="window.open('media/Abigail_Walters_Resume.pdf', '_blank')">View my Resume Here</button>
                 </div>
                 <div class="card-container">
                     <div class="card">
@@ -306,7 +306,7 @@
                     <div style="display: flex; justify-content: center; align-items: center">
                         <img class="got-to-go" src="media/Got2Go.png" alt="Got2Go Home Screen">
                     </div>
-                    <h3><a href="media/CISCx82Got2Go.mov" target="_blank">Got2Go</a></h3>
+                    <h3>Got2Go</h3>
                     <h5>Created in: November 2022</h5>
                     <p>
                         An Android app catering to individuals with IBS, offering a reliable directory of restrooms. 
@@ -345,7 +345,6 @@
                     <p>Use this convenient email form to email me at awrose@udel.edu</p>
                 </div>
             <div class="contactForm">
-                <span id="emailStatus"></span>
                 <form id="contactForm">
                     <div>
                         <label for="fname">First Name*</label>
@@ -358,7 +357,7 @@
                         <span id="lnameValidation"></span>
                     </div>
                     <div>
-                        <label for="phoneNumber">Phone Number</label>
+                        <label for="phoneNumber">Phone Number*</label>
                         <input type="text" id="phoneNumber" name="user_phone" placeholder="123-456-7890" pattern="^\d{3}-\d{3}-\d{4}$" title="XXX-XXX-XXXX">
                         <span id="phoneValidation"></span>
                     </div>
@@ -373,6 +372,7 @@
                         <span id="messageValidation"></span>
                     </div>
                     <button class="button" type="submit" id="submitButton">Submit</button>
+                    <span id="emailStatus"></span>
                 </form>
             </div>
         </div>
@@ -393,6 +393,11 @@
                     <i class="fab fa-github"></i>
                 </a>
             </div>
+
+            <div class="right-content">
+                <p>Website Created in 2023</p>
+            </div>
+
         </footer>
     </div>
 
